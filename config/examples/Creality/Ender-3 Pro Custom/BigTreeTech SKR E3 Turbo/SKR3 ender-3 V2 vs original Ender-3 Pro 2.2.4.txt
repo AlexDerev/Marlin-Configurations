@@ -1,0 +1,19 @@
+SKR3 ender-3 V2 vs original Ender-3 Pro 2.2.4
+Conaiguration.h
+No SHOW_CUSTOM_BOOTSCREEN (81), CUSTOM_STATUS_SCREEN_IMAGE (84)
+MOTHERBOARD BOARD_BTT_SKR_E3_TURBO vs MOTHERBOARD BOARD_CREALITY_V4 (90) 
+SERIAL_PORT -1 vs SERIAL_PORT 1 (101)
+SERIAL_PORT_2 -1 vs SERIAL_PORT_2 3 (123) ?? обратить внимание на порты
+CUSTOM_MACHINE_NAME "Ender-3 V2" (138)
+DRIVER_TYPE  TMC2209 (159-161, 173)
+no ENDSTOP_INTERRUPTS_FEATURE (1120) ?? проверить по плате, неужели нет прерываний на пинах
+INVERT_E0_DIR true (1649) ?? нужно будет проверять
+BED_SIZE 220 vs BED_SIZE 235 (1690, 1691) изменить на 235
+No CR10_STOCKDISPLAY (2830-2833) нужно уточнение, возможно надо взять из 2.2.4
+DWIN_CREALITY_LCD (3146) oem для V2. Не нужен
+No FAN_SOFT_PWM (3204)
+
+Configuration_adv.h
+QUICK_HOME (874)
+No LCD_INFO_MENU (1364)
+X_CURRENT       580 vs X_CURRENT       800 (2801,2821,2841, 2941) Оставить
